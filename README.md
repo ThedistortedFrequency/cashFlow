@@ -1,16 +1,15 @@
-# expense_tracker
+ 
+# cashFlow
 
-A new Flutter project.
+CashFlow is a lightweight and user-friendly expense tracker app designed to help track your expenses, monitor your spending habits, and stay on top of your budget with CashFlow. Whether you're tracking personal expenses or managing finances for your business, CashFlow makes it easy to stay organized and in control of your money.
+## Authors
 
-## Getting Started
+- [@TheDistortedFrequency](https://www.github.com/TheDistortedFrequency)
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Light/dark mode toggle
+- Live previews
+- Cross platform
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
