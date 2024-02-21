@@ -1,5 +1,6 @@
 import 'package:expense_tracker/homepage.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,6 +15,7 @@ class MyApp extends StatelessWidget {
       title: 'Expense Tracker',
       theme: ThemeData(
         useMaterial3: true,
+        fontFamily: GoogleFonts.poppins().fontFamily,
       ),
       home: const HomePage(),
     );
