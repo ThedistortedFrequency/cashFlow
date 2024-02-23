@@ -1,6 +1,6 @@
 class IndividualBar {
   final int x;
-  final double y;
+  final int y;
 
   IndividualBar({
     required this.x,

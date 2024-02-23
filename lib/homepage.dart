@@ -13,7 +13,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   // transaction list...
-  final List<Transaction> transactions = weeklySummary;
+  final List<Transaction> transactions = [];
 
   // method for new transaction addition.
   void addNewTransaction(String txTitle, int txAmount) {
@@ -26,6 +26,7 @@ class _HomePageState extends State<HomePage> {
     setState(
       () {
         transactions.add(newtx);
+        updateWeeklySummary();
       },
     );
   }
@@ -38,7 +39,24 @@ class _HomePageState extends State<HomePage> {
         });
   }
 
-  List weeklySummary = [];
+  void updateWeeklySummary() {
+    weeklySummary = List<int>.filled(7, 0);
+
+    for (var i = 0; i < transactions.length; i++) {
+      final transactionDay = transactions[i].date.weekday % 7;
+      weeklySummary[transactionDay] += transactions[i].amount;
+    }
+  }
+
+  List weeklySummary = [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -51,7 +69,7 @@ class _HomePageState extends State<HomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const SizedBox(
-              height: 20,
+              height: 50,
             ),
             Center(
               child: SizedBox(

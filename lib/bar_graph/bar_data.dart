@@ -1,13 +1,13 @@
 import 'package:expense_tracker/bar_graph/individual.dart';
 
 class BarData {
-  final double sundayExp;
-  final double mondayExp;
-  final double tuesdayExp;
-  final double wednesdayExp;
-  final double thursdayExp;
-  final double fridayExp;
-  final double saturdayExp;
+  final int sundayExp;
+  final int mondayExp;
+  final int tuesdayExp;
+  final int wednesdayExp;
+  final int thursdayExp;
+  final int fridayExp;
+  final int saturdayExp;
 
   BarData({
     required this.sundayExp,

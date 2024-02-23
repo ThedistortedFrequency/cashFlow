@@ -19,7 +19,7 @@ class Grpah extends StatelessWidget {
     );
     myBarData.intializeBarData();
     return BarChart(BarChartData(
-        maxY: 200,
+        maxY: 500,
         minY: 0,
         gridData: const FlGridData(show: false),
         borderData: FlBorderData(show: false),
@@ -39,13 +39,13 @@ class Grpah extends StatelessWidget {
                 x: data.x,
                 barRods: [
                   BarChartRodData(
-                      toY: data.y,
+                      toY: data.y.toDouble(),
                       color: Colors.grey[800],
                       width: 25,
                       borderRadius: BorderRadius.circular(4),
                       backDrawRodData: BackgroundBarChartRodData(
                         show: true,
-                        toY: 200,
+                        toY: 500,
                         color: Colors.grey[100],
                       )),
                 ],
